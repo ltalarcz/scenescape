@@ -18,7 +18,7 @@ from scene_common.transform import CameraIntrinsics
 from percebro.videosource import VideoSource
 import tests.common_test_utils as common
 
-VIDEO_PATH = "sample_data/apriltag-cam1.mp4"
+VIDEO_PATH = "tests/test_media/demo-cam1.mp4"
 
 TEST_NAME = "SAIL-T569"
 def pytest_sessionstart():

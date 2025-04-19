@@ -18,18 +18,18 @@ import base64
 import numpy as np
 import pytest
 
-from autocalibration.auto_camera_calibration_model import CalibrationScene
-from autocalibration.markerless_camera_calibration import CameraCalibrationMonocularPoseEstimate
+from auto_camera_calibration_model import CalibrationScene
+from markerless_camera_calibration import CameraCalibrationMonocularPoseEstimate
 from scene_common.options import MARKERLESS
 
 import tests.common_test_utils as common
 
 TEST_NAME = "SAIL-T617"
-SCENE_MAP = "sample_data/atag-calib-demo-map.png"
+SCENE_MAP = "tests/test_media/atag-calib-demo-map.png"
 SCENE_ID = "f1b9b1b0-1b1b-1b1b-1b1b-1b1b1b1b1b1b"
 DATASET_DIR = os.path.abspath(os.path.join(__file__ ,"../test_markerless/test_dataset"))
 OUTPUT_DIR = os.path.abspath(os.path.join(__file__ ,"../test_markerless/output_dir"))
-TEST_MEDIA_PATH = os.path.abspath(os.path.join(__file__ ,"../../../ui/test_media/"))
+TEST_MEDIA_PATH = os.path.abspath(os.path.join(__file__ ,"../../test_media/"))
 GLB_PATH = TEST_MEDIA_PATH + "/box.glb"
 BAD_GLB_PATH = TEST_MEDIA_PATH + "/box_invalid.glb"
 

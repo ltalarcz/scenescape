@@ -15,9 +15,9 @@ import cv2
 from percebro.videosource import VideoSource
 
 @pytest.mark.parametrize("videoPath, distortion",
-                         [("sample_data/apriltag-cam1.mp4", np.zeros(4)),
-                          ("sample_data/Demo.png", np.zeros(4)),
-                          ("sample_data/Demo.png", [0, 0, 0, 0])])
+                         [("tests/test_media/demo-cam1.mp4", np.zeros(4)),
+                          ("tests/test_media/Demo.png", np.zeros(4)),
+                          ("tests/test_media/Demo.png", [0, 0, 0, 0])])
 def test_init(camIntrinsics, videoPath, distortion):
   """! Verifies the instance of the VideoSource class
 
@@ -111,7 +111,7 @@ def test_setResolution(videoSourceObj):
   return
 
 @pytest.mark.parametrize("videoPath, distortion",
-                         [("sample_data/apriltag-cam1.mp4", np.zeros(4))])
+                         [("tests/test_media/demo-cam1.mp4", np.zeros(4))])
 def test_getResolution(camIntrinsics, videoPath, distortion):
   """! Verifies the output of 'getResolution' function
 

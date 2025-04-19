@@ -14,11 +14,11 @@
 import numpy as np
 import pytest
 
-from autocalibration.atag_camera_calibration import CameraCalibrationApriltag
+from atag_camera_calibration import CameraCalibrationApriltag
 import tests.common_test_utils as common
 
 TEST_NAME = "SAIL-T576"
-scene_map = "sample_data/atag-calib-demo-map.png"
+scene_map = "tests/test_media/atag-calib-demo-map.png"
 
 def pytest_sessionstart():
   """! Executes at the beginning of the session. """
